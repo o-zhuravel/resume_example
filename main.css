@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Montserrat_;
+    src: url(./Montserrat/static/);
+}
+
+@font-face {
+    font-family: Open_Sans_;
+    src: url(./Open_Sans/static/);
+}
+
+@font-face {
+    font-family: Lato_;
+    src: url(./Lato/);
+}
+
+.wrapper {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+}
+
+              /* general */
+
+.container-dotter {
+    padding-right: 5%;
+}
+
+.container-dotter .container-flex-dotter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-dotter .container-flex-dotter .contant-with-dotter {
+    width: 50%;
+}
+
+.container-dotter .container-flex-dotter img {
+    width: 10px;
+    margin-left: 3%;
+}
+
+            /* LEFT CONTAINER */
+
+.left-container {
+    width: 30%;
+    background: url(./) no-repeat center 100% 100%;
+    padding: 5%;
+    background-color: ;
+}
+
+.left-container .candidate-photo {
+    box-sizing: border-box;
+}
+
+.left-container .candidate-photo img {
+    width: 100%;
+}
+
+.left-container .candidate-name h1 {
+    font-family: ;
+    font-size: ;
+    letter-spacing: 3px;
+    color: #424243;
+    text-align: center
+}
+
+.left-container .candidate-name p {
+    font-family: ;
+    font-size: ;
+    color: #424243;
+    text-align: center
+}
+
+.left-container h2 {
+    font-family: ;
+    font-size: ;
+    color: white;
+    text-align: center;
+    background-color: #424243;
+}
+
+             /* contacts */
+
+.left-container .candidate-contacts .links-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container .candidate-contacts .links-cont a {
+    text-decoration: none;
+    color: #424243;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-container .candidate-contacts .links-cont a img {
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+
+             /* social */
+
+.left-container .candidate-social .links-soc {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-container .candidate-social .links-soc a {
+    text-decoration: none;
+    color: #424243;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.left-container .candidate-social .links-soc a img {
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+
+             /* hobbies */
+
+.left-container .candidate-hobbies .container-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container .candidate-hobbies .container-hobbies .hobbies {
+    box-sizing: border-box;
+    padding: 3% 5%;
+    width: 50%;
+}
+
+
+            /* RIGHT CONTAINER */
+
+.right-container {
+    width: 70%;
+    padding: 5%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 40px;
+}
+
+.title h2 {
+    width: 100%;
+    font-family: ;
+    font-size: ;
+    color: #424243;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #424243;
+    margin-left: 20px;
+}
+
+.text {
+    text-align: justify;
+    color: #777778;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place h3 {
+    font-family: ;
+    font-size: ;
+    color: ;
+}
+
+.place p {
+    font-family: ;
+    font-size: ;
+    color: ;
+}
+
+             /* skills */
+
+.skills .container-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .container-skills .skills-item-1 {
+    white-space: nowrap;
+    width: 40%;
+}
+
+.skills .container-skills .skills-item-2 {
+    white-space: nowrap;
+    width: 40%;
+}
+
+@media (max-width: 1000px) {
+    .right-container .education .place {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .right-container .experience .place {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .right-container .skills .container-skills {
+        flex-direction: column;
+
+    }
+
+    .right-container .skills .container-skills .skills-item-1 {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .right-container .skills .container-skills .skills-item-2 {
+        width: 100%;
+    }
+}
