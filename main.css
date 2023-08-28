@@ -3,23 +3,24 @@ body {
 }
 
 @font-face {
-    font-family: Montserrat_;
-    src: url(./Montserrat/static/);
+    font-family: Montserrat_Regular;
+    src: url(./Montserrat/static/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: Open_Sans_;
-    src: url(./Open_Sans/static/);
+    font-family: Open_Sans_Regular;
+    src: url(./Open_Sans/static/OpenSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: Lato_;
-    src: url(./Lato/);
+    font-family: Lato_Regular;
+    src: url(./Lato/Lato-Regular.ttf);
 }
 
 .wrapper {
     display: flex;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
+    font-family: Lato_Regular;
 }
 
               /* general */
@@ -49,7 +50,7 @@ body {
     width: 30%;
     background: url(./) no-repeat center 100% 100%;
     padding: 5%;
-    background-color: ;
+    background-color: #bed8ec;
 }
 
 .left-container .candidate-photo {
@@ -61,23 +62,23 @@ body {
 }
 
 .left-container .candidate-name h1 {
-    font-family: ;
-    font-size: ;
+    font-family: Lato_Regular;
+    font-size: 40px;
     letter-spacing: 3px;
     color: #424243;
     text-align: center
 }
 
 .left-container .candidate-name p {
-    font-family: ;
-    font-size: ;
+    font-family: Montserrat_Regular;
+    font-size: 16px;
     color: #424243;
     text-align: center
 }
 
 .left-container h2 {
-    font-family: ;
-    font-size: ;
+    font-family: Open_Sans_Regular;
+    font-size: 22px;
     color: white;
     text-align: center;
     background-color: #424243;
@@ -157,8 +158,8 @@ body {
 
 .title h2 {
     width: 100%;
-    font-family: ;
-    font-size: ;
+    font-family: Open_Sans_Regular;
+    font-size: 22px;
     color: #424243;
     padding-bottom: 10px;
     border-bottom: 1px solid #424243;
@@ -177,15 +178,15 @@ body {
 }
 
 .place h3 {
-    font-family: ;
-    font-size: ;
-    color: ;
+    font-family: Lato_Regular;
+    font-size: 18px;
+    color: #424243;
 }
 
 .place p {
-    font-family: ;
-    font-size: ;
-    color: ;
+    font-family: Lato_Regular;
+    font-size: 14px;
+    color: #424243;
 }
 
              /* skills */
@@ -228,5 +229,19 @@ body {
 
     .right-container .skills .container-skills .skills-item-2 {
         width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 90%;
+    }
+
+    .right-container {
+        width: 90%;
     }
 }
